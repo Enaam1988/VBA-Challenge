@@ -59,7 +59,7 @@ Sub stock_analysis()
               ' 0 starting value would simultaneously cause divide by zero error
               ' and be meaningless
               If (First_Open <> 0) Then
-                Range("K" & Summary_Table_Row).Value = ((Last_Close - First_Open) / First_Open) * 100
+                Range("K" & Summary_Table_Row).Value = ((Last_Close - First_Open) / First_Open) 
                Range("K" & Summary_Table_Row).Style = "Percent"
               Range("K" & Summary_Table_Row).NumberFormat = "0.00%"
               End If
